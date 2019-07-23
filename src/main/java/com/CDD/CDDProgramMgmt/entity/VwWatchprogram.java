@@ -1,7 +1,4 @@
 package com.CDD.CDDProgramMgmt.entity;
-
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -14,13 +11,14 @@ public class VwWatchprogram {
 	private int programid;
 	private String programname;
 	private int programowner;
-	private Date introdate;
-	private Date regularsubmitaldate;
+	private String introdate;
+	private String regularsubmitaldate;
 	private String plcde;
-	private Character status;
+	private String status;
+	private String color;
 	
-	public VwWatchprogram(int id, int userid, int programid, String programname, int programowner, Date introdate, Date regularsubmitaldate,
-			String plcde, Character status) {
+	public VwWatchprogram(int id, int userid, int programid, String programname, int programowner, String introdate, String regularsubmitaldate,
+			String plcde, String status, String color) {
 		this.id = id;
 		this.userid = userid;
 		this.programid = programid;
@@ -30,6 +28,7 @@ public class VwWatchprogram {
 		this.regularsubmitaldate = regularsubmitaldate;
 		this.plcde = plcde;
 		this.status = status;
+		this.color = color;
 	}
 	
 	public VwWatchprogram() {
@@ -75,19 +74,19 @@ public class VwWatchprogram {
 		this.programowner = programowner;
 	}
 
-	public Date getIntrodate() {
+	public String getIntrodate() {
 		return introdate;
 	}
 
-	public void setIntrodate(Date introdate) {
+	public void setIntrodate(String introdate) {
 		this.introdate = introdate;
 	}
 
-	public Date getRegularsubmitaldate() {
+	public String getRegularsubmitaldate() {
 		return regularsubmitaldate;
 	}
 
-	public void setRegularsubmitaldate(Date regularsubmitalsdate) {
+	public void setRegularsubmitaldate(String regularsubmitalsdate) {
 		this.regularsubmitaldate = regularsubmitalsdate;
 	}
 
@@ -99,11 +98,19 @@ public class VwWatchprogram {
 		this.plcde = plcde;
 	}
 
-	public Character getStatus() {
+	public String getStatus() {
 		return status;
 	}
 
-	public void setStatus(Character status) {
+	public void setStatus(String status) {
 		this.status = status;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 }
