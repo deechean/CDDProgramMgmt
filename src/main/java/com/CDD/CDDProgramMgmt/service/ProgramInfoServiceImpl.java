@@ -69,5 +69,14 @@ public class ProgramInfoServiceImpl implements ProgramInfoService {
 		List<VwPrograminfo> programs = programinfodao.findByProgramname(programname);
 		return programs;
 	}
+	
+	/* (non-Javadoc)
+	 * @see com.CDD.CDDProgramMgmt.service.ProgramInfoService#findAllprogram()
+	 */
+	@Override
+	public List<VwPrograminfo> findAllprogram(){
+		List<VwPrograminfo> programs = programinfodao.findAll();
+		return programs;
+	}
 
 }

@@ -49,4 +49,9 @@ public class ProgramController {
 		List<VwPrograminfo> programs = programService.findByProgramname(programname);
 		return programs;
 	}
+	@RequestMapping("/findallprogram")
+	public List<VwPrograminfo> findAllProgram() {
+		List<VwPrograminfo> programs = programService.findAllprogram();
+		return programs;
+	}
 }

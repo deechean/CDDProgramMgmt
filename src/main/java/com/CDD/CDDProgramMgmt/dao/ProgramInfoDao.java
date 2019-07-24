@@ -17,4 +17,5 @@ public interface ProgramInfoDao extends JpaRepository<VwPrograminfo, Integer> {
 	public List<VwPrograminfo> findByOwnername(String ownername);
 	public List<VwPrograminfo> findByOwnerid(int ownerid);
 	public List<VwPrograminfo> findByProgramname(String programname);
+	public List<VwPrograminfo> findAll();
 }
