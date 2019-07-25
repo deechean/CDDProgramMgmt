@@ -22,4 +22,5 @@ public class UserController {
 		List<TUser> users = userService.findAllusers();
 		return users;
 	}
+	
 }
