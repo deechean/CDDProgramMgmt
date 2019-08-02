@@ -9,7 +9,7 @@ public class VwWatchprogram {
 	private int id;
 	private int userid;
 	private int programid;
-	private String programname;
+	private String name;
 	private int programowner;
 	private String introdate;
 	private String regularsubmitaldate;
@@ -17,12 +17,12 @@ public class VwWatchprogram {
 	private String status;
 	private String color;
 	
-	public VwWatchprogram(int id, int userid, int programid, String programname, int programowner, String introdate, String regularsubmitaldate,
+	public VwWatchprogram(int id, int userid, int programid, String name, int programowner, String introdate, String regularsubmitaldate,
 			String plcde, String status, String color) {
 		this.id = id;
 		this.userid = userid;
 		this.programid = programid;
-		this.programname = programname;
+		this.name = name;
 		this.programowner = programowner;
 		this.introdate = introdate;
 		this.regularsubmitaldate = regularsubmitaldate;
@@ -58,12 +58,12 @@ public class VwWatchprogram {
 		this.programid = programid;
 	}
 
-	public String getProgramname() {
-		return programname;
+	public String getName() {
+		return name;
 	}
 
-	public void setProgramname(String programname) {
-		this.programname = programname;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getProgramowner() {

@@ -56,11 +56,11 @@ public class VwPrograminfo {
 		this.name = name;
 	}
 	
-	public String getProgramowner() {
+	public String getOwnername() {
 		return ownername;
 	}
 
-	public void setProgramowner(String ownername) {
+	public void setOwnername(String ownername) {
 		this.ownername = ownername;
 	}
 
