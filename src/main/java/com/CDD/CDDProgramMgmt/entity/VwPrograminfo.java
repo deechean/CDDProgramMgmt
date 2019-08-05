@@ -7,7 +7,7 @@ public class VwPrograminfo {
 	@Id
 	private int id;
 	private int ownerid;
-	private String programname;
+	private String name;
 	private String ownername;
 	private String introdate;
 	private String regularsubmitaldate;
@@ -16,11 +16,11 @@ public class VwPrograminfo {
 	private String status;
 	private String color;
 	
-	public VwPrograminfo(int id, int ownerid, String programname, String ownername, String introdate, String regularsubmitaldate,
+	public VwPrograminfo(int id, int ownerid, String name, String ownername, String introdate, String regularsubmitaldate,
 			String plcde, String status, String color) {
 		this.id = id;
 		this.ownerid = ownerid;
-		this.programname = programname;
+		this.name = name;
 		this.ownername = ownername;
 		this.introdate = introdate;
 		this.regularsubmitaldate = regularsubmitaldate;
@@ -48,19 +48,19 @@ public class VwPrograminfo {
 		this.ownerid = ownerid;
 	}
 		
-	public String getProgramname() {
-		return programname;
+	public String getName() {
+		return name;
 	}
 
-	public void setProgramname(String programname) {
-		this.programname = programname;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String getProgramowner() {
+	public String getOwnername() {
 		return ownername;
 	}
 
-	public void setProgramowner(String ownername) {
+	public void setOwnername(String ownername) {
 		this.ownername = ownername;
 	}
 

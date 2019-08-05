@@ -65,8 +65,8 @@ public class ProgramInfoServiceImpl implements ProgramInfoService {
 	 * @see com.CDD.CDDProgramMgmt.service.ProgramInfoService#findByProgramname(String)
 	 */
 	@Override
-	public List<VwPrograminfo> findByProgramname(String programname) {
-		List<VwPrograminfo> programs = programinfodao.findByProgramname(programname);
+	public List<VwPrograminfo> findByProgramname(String name) {
+		List<VwPrograminfo> programs = programinfodao.findByName(name);
 		return programs;
 	}
 	
